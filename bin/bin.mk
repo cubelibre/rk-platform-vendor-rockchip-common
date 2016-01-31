@@ -2,7 +2,8 @@ ifeq ($(strip $(TARGET_ARCH)), arm)
 
 PRODUCT_PACKAGES += \
     mkdosfs         \
-    sdtool
+    sdtool          \
+    b2linux
 
 endif
 
@@ -10,7 +11,8 @@ ifeq ($(strip $(TARGET_ARCH)), arm64)
 
 PRODUCT_PACKAGES += \
     mkdosfs         \
-    sdtool
+    sdtool          \
+    b2linux
 
 endif
 

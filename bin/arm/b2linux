@@ -1,0 +1,4 @@
+#!/system/bin/sh
+echo -n "boot-linux" \
+	| (busybox dd bs=16k seek=1 conv=sync; busybox dd if=/dev/zero bs=16k count=1) > /dev/block/platform/ff0f0000.rksdmmc/by-name/misc 
+reboot
